@@ -1,0 +1,21 @@
+{
+  "name": "coffee-js-mixed-eslint-example",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint 'src/**/*'"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "babel-eslint": "^10.0.3",
+    "coffeescript": "^2.5.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-plugin-coffee": "^0.1.12",
+    "eslint-plugin-prettier": "^3.1.2",
+    "prettier": "^1.19.1"
+  }
+}

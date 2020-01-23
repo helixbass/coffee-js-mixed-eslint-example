@@ -1,0 +1,15 @@
+parser: babel-eslint
+extends:
+  - airbnb
+  - prettier
+  - plugin:prettier/recommended
+plugins:
+  - prettier
+overrides:
+  - files: '**/*.coffee'
+    parser: eslint-plugin-coffee
+    plugins:
+      - coffee
+    extends:
+      - plugin:coffee/airbnb
+      - plugin:coffee/import
