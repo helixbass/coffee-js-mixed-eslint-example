@@ -13,3 +13,7 @@ overrides:
     extends:
       - plugin:coffee/airbnb
       - plugin:coffee/import
+    settings:
+      import/parsers:
+        eslint-plugin-coffee/lib/parser: ['.coffee']
+        babel-eslint: ['.js', '.jsx']
