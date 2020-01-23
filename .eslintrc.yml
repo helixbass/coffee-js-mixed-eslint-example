@@ -5,6 +5,17 @@ extends:
   - plugin:prettier/recommended
 plugins:
   - prettier
+rules:
+  import/prefer-default-export: off
+settings:
+  import/extensions: ['.coffee', '.js', '.jsx']
+  import/parsers:
+    eslint-plugin-coffee/lib/parser: ['.coffee']
+    babel-eslint: ['.js', '.jsx']
+  import/resolver:
+    node:
+      extensions: ['.coffee', '.js', '.jsx']
+  import/ignore: ['node_modules', '\\.(scss|css|less|hbs|svg|json)$']
 overrides:
   - files: '**/*.coffee'
     parser: eslint-plugin-coffee
@@ -13,6 +24,8 @@ overrides:
     extends:
       - plugin:coffee/airbnb
       - plugin:coffee/import
+    rules:
+      import/prefer-default-export: off
     settings:
       import/parsers:
         eslint-plugin-coffee/lib/parser: ['.coffee']
